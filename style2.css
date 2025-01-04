@@ -1,0 +1,91 @@
+/* General Styles */
+* {
+    margin: 2;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: url('https://wallpaper.dog/large/17271802.jpg') no-repeat center center/cover;
+    color: #fff;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+/* Header Styles */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1rem 0;
+}
+header .logo {
+    height: 50px;
+    width: auto;
+}
+header h1 {
+    font-size: 3.0rem;
+    text-align: center;
+    color: #fff;
+}
+
+/* Section Styles */
+main section {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+main .ai-section {
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 1rem;
+}
+main .ml-section {
+    background: rgba(255, 255, 255, 0.2);
+    margin-bottom: 1rem;
+}
+main .dl-section {
+    background: rgba(255, 255, 255, 0.3);
+}
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.content .icon {
+    font-size: 3rem;
+    color: #1abc9c;
+    margin-bottom: 1rem;
+}
+.content h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+.content p {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.8);
+}
+footer p {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    .content h2 {
+        font-size: 1.5rem;
+    }
+    .content p {
+        font-size: 0.9rem;
+    }
+}

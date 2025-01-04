@@ -1,0 +1,170 @@
+/*CSS RESET*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*CSS Variables*/
+:root{
+    --navbar-height:59px;
+}
+
+/*Navigation Bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+/*Navigation Bar:Logo and images*/
+#logo{
+margin: 9px 9px;
+
+
+}
+#logo img{
+    height: 40px;
+    margin: 1px 1px;
+}
+
+/*Navigation Bar:List styling*/
+#navbar{
+    position: relative;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(3, 3, 13);
+position: absolute;
+height: 100%;
+width: 100%;
+z-index: -1;
+opacity: 0.70;
+}
+
+#navbar ul li{
+   list-style: none;
+   font-size: 1rem;
+}
+
+
+#navbar ul li a{
+    color: rgb(253, 253, 253);
+display: block;
+padding: 3px 22px;
+border-radius: 20px;
+text-decoration: none;
+}
+
+#navbar ul li a:hover{
+color: rgb(12, 1, 1);
+background-color:rgb(243, 244, 247);
+}
+
+/*home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 561px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+position: absolute;
+background: url('https://blog.uber-cdn.com/cdn-cgi/image/width=1792,quality=80,onerror=redirect,format=auto/wp-content/uploads/2024/04/background_top.png') no-repeat center center/cover;
+height: 100%;
+width: 100%;
+z-index: -1;
+opacity: 5;
+}
+
+#home h1{
+    color: rgb(239, 236, 236);
+    text-align: center;
+    text-decoration: solid;
+}
+
+#home p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+}
+/*services section*/
+#services{
+    margin: 34 px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid rgb(14, 10, 1);
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: rgb(194, 224, 239);
+    font-size: larger;
+    color: black;
+    text-align: left;
+}
+#services .box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+}
+
+#services{
+
+}
+#services{}
+#services{}
+#services{}
+
+
+/*client section*/
+#client-section{
+height: 343px;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#clients img{
+    height: 144px;
+}
+
+
+/*utility classes*/
+.h-primary{
+    font-size: 3rem;
+    font-style: oblique;
+    padding: 27px;
+}
+
+.h-secondary{
+    font-size: 10rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 12px;
+}
+
+.btn
+{
+    padding: 6px 20px;
+    border: 2x solid rgb(16, 0, 0);
+    background-color: white;
+    color: rgb(16, 1, 1);
+    margin: 17px;
+    font-size: 1rem;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
