@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq-container">
+        <div class="faq">
+            <div class="question">
+                What is Moonlight AI?
+                <span class="arrow">&#9654;</span>
+            </div>
+            <div class="answer">
+                Moonlight AI is a cutting-edge artificial intelligence platform designed to assist with various tasks and provide intelligent solutions.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">
+                How does Moonlight AI work?
+                <span class="arrow">&#9654;</span>
+            </div>
+            <div class="answer">
+                Moonlight AI leverages advanced machine learning algorithms and neural networks to analyze data and deliver accurate results efficiently.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">
+                Is Moonlight AI secure?
+                <span class="arrow">&#9654;</span>
+            </div>
+            <div class="answer">
+                Yes, Moonlight AI employs state-of-the-art encryption and security protocols to ensure your data is safe and protected.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const questions = document.querySelectorAll('.question');
+
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const faq = question.parentElement;
+                faq.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
+
+
